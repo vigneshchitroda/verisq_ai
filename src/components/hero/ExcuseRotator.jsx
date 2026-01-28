@@ -1,30 +1,32 @@
-import { useState, useEffect } from "react"
+import { useState, useEffect } from "react";
+import { AlertTriangle } from "lucide-react";
+
+const excuses = [
+  "We can't afford it.",
+  "It's not in this year's budget.",
+  "We don't have anyone who knows how.",
+  "Our security team is stretched thin.",
+  "We'll get to it next quarter.",
+  "We have too many vendors to even start."
+];
 
 function ExcuseRotator() {
-  const excuses = [
-    "We can't afford it.",
-    "It's not in this year's budget.",
-    "We don't have anyone who knows how.",
-    "Our security team is stretched thin.",
-    "We'll get to it next quarter.",
-    "We have too many vendors to even start."
-  ]
-
-  const [currentIndex, setCurrentIndex] = useState(0)
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) =>
-        prevIndex === excuses.length - 1 ? 0 : prevIndex + 1
-      )
-    }, 3000)
+      setCurrentIndex((prev) =>
+        prev === excuses.length - 1 ? 0 : prev + 1
+      );
+    }, 3000);
 
-    return () => clearInterval(interval)
-  }, [])
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <div className="excuse-container">
       <div className="excuse-label">
+        <AlertTriangle size={14} />
         LARRY SAYS:
       </div>
 
@@ -32,8 +34,16 @@ function ExcuseRotator() {
         "{excuses[currentIndex]}"
       </div>
 
+      <div className="excuse-dots">
+        {excuses.map((_, index) => (
+          <span
+            key={index}
+            className={`excuse-dot ${index === currentIndex ? "active" : ""}`}
+          />
+        ))}
+      </div>
     </div>
-  )
+  );
 }
 
-export default ExcuseRotator
+export default ExcuseRotator;

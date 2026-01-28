@@ -136,6 +136,7 @@ body {
 
 .hero-content {
     padding-right: 2rem;
+    
 }
 
 .campaign-tag {
@@ -638,9 +639,11 @@ body {
         padding-top: 6rem;
     }
 
-    .hero-content {
-        padding-right: 0;
-    }
+   .hero-content {
+    padding-right: 2rem;
+
+}
+
 
     .hero-headline {
         font-size: 2.5rem;
@@ -688,4 +691,11 @@ body {
     opacity: 1;
     transform: translateY(0);
   }
+}
+/* 🔧 FIX: Prevent Vite root from shifting layout */
+#root {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;   
 }
