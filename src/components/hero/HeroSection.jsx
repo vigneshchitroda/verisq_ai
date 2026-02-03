@@ -3,35 +3,41 @@ import ExcuseRotator from "./ExcuseRotator"
 import StatsRow from "./StatsRow"
 import LarryQuote from "./LarryQuote"
 import SignupForm from "./SignupForm"
+import FeaturesStrip from "./FeaturesStrip"
 
 function HeroSection() {
   return (
-    <section className="hero">
-      {/* Left Content */}
-      <div className="hero-content">
-        <CampaignTag />
+    <>
+      {/* MAIN HERO */}
+      <section className="hero">
+        {/* Left Content */}
+        <div className="hero-content">
+          <CampaignTag />
 
-        <h1 className="hero-headline">
-          Stop making excuses.<br />
-          <span>Start managing risk.</span>
-        </h1>
+          <h1 className="hero-headline">
+            Stop making excuses.<br />
+            <span>Start managing risk.</span>
+          </h1>
 
-        <ExcuseRotator />
+          <ExcuseRotator />
 
-        <p className="hero-description">
-          Test-drive Verisq AI with <strong>5 vendors free</strong>. 
-          See real LiveThreat scores, not a demo. No credit card. No sales call. 
-          Just proof that TPRM doesn't require a dedicated team.
-        </p>
+          <p className="hero-description">
+            Test-drive Verisq AI with <strong>5 vendors free</strong>.
+            See real LiveThreat scores, not a demo. No credit card. No sales call.
+            Just proof that TPRM doesn't require a dedicated team.
+          </p>
 
-        <StatsRow />
+          <StatsRow />
+          <LarryQuote />
+        </div>
 
-        <LarryQuote />
-      </div>
+        {/* Right Content */}
+        <SignupForm />
+      </section>
 
-      {/* Right Content */}
-      <SignupForm />
-    </section>
+      {/* ✅ BLUE FEATURE STRIP GOES HERE */}
+      <FeaturesStrip />
+    </>
   )
 }
 
