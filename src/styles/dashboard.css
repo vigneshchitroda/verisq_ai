@@ -165,6 +165,7 @@ body {
   max-width: 1400px;
   margin: 0 auto;
   padding: 2rem;
+   padding-top: 8.2rem; /* 👈 pushes content below header */
 }
 
 /* Welcome Banner */
@@ -306,4 +307,434 @@ body {
   font-size: 0.8125rem;
   color: var(--text-muted);
   margin-top: 0.25rem;
+}
+/* ============================= */
+/* Vendor Table */
+/* ============================= */
+
+.vendor-table-card {
+  background: var(--bg-primary);
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--border);
+  margin-bottom: 2rem;
+  letter-spacing: 0.06em;  
+}
+
+.table-header {
+  margin-bottom: 1rem;
+}
+
+.table-header h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.table-subtitle {
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+}
+
+.vendor-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.vendor-table th {
+  text-align: left;
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  padding: 0.75rem 0;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.vendor-table td {
+  padding: 1rem 0;
+  border-top: 1px solid var(--border);
+}
+
+.vendor-name {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+/* ===== Vendor cell layout ===== */
+.vendor-cell {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+/* Avatar square */
+.vendor-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #3b82f6, #6366f1);
+  color: white;
+  font-weight: 700;
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* Green avatar for second vendor */
+.vendor-avatar.green {
+  background: linear-gradient(135deg, #10b981, #059669);
+}
+
+/* Vendor text block */
+.vendor-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.vendor-name-text {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.vendor-domain {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+
+/* ===== Status badge ===== */
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.status-complete {
+  background: var(--success-light);
+  color: var(--success);
+}
+
+.status-processing {
+  background: var(--info-light);
+  color: var(--info);
+}
+
+
+/* Risk badges */
+.risk-badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.risk-low {
+  background: var(--success-light);
+  color: var(--success);
+}
+
+.risk-medium {
+  background: var(--warning-light);
+  color: var(--warning);
+}
+
+.risk-high {
+  background: var(--danger-light);
+  color: var(--danger);
+}
+
+/* Score bar */
+.score-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.score-value {
+  font-weight: 700;
+  width: 32px;
+}
+
+.score-bar {
+  flex: 1;
+  height: 6px;
+  background: var(--bg-secondary);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.score-fill {
+  height: 100%;
+  background: var(--primary);
+  border-radius: 999px;
+}
+
+/* Actions */
+.vendor-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.icon-btn {
+  background: transparent;
+  border: none;
+  padding: 0.25rem;
+  cursor: pointer;
+  color: var(--text-muted);
+}
+
+.icon-btn:hover {
+  color: var(--primary);
+}
+/* ============================= */
+/* High Risk Alert */
+/* ============================= */
+
+.alert {
+  border-radius: 16px;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: var(--shadow-md);
+  border: 1px solid;
+}
+
+.alert-danger {
+  background: var(--danger-light);
+  border-color: var(--danger);
+  color: var(--danger);
+}
+
+/* layout */
+.alert-flex {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* icon */
+.alert-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: var(--danger);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* text */
+.alert-content {
+  flex: 1;
+}
+
+.alert-title {
+  font-size: 0.9375rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.alert-content p {
+  font-size: 0.875rem;
+  color: var(--text-secondary); /* #64748b */
+}
+
+
+
+/* button */
+.alert-btn {
+  background: var(--danger);
+  color: white;
+  border: none;
+  padding: 0.625rem 1rem;
+  border-radius: 10px;
+  font-size: 0.875rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.alert-btn:hover {
+  background: #dc2626;
+  transform: translateY(-1px);
+}
+
+
+/* ============================= */
+/* HEADER ALIGNMENT FIX (missing) */
+/* ============================= */
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo-text {
+  opacity: 1; /* ensure logo visible */
+}
+
+
+/* ============================= */
+/* TABLE HEADER FLEX (missing) */
+/* ============================= */
+
+.table-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+/* ============================= */
+/* VENDOR ROW HEIGHT & SPACING */
+/* ============================= */
+
+.vendor-table td {
+  padding: 1.35rem 0;  /* taller rows like original */
+}
+
+
+/* ============================= */
+/* AVATAR COLOR VARIANTS */
+/* ============================= */
+
+.vendor-avatar.blue {
+  background: linear-gradient(135deg, #3b82f6, #6366f1);
+}
+
+.vendor-avatar.green {
+  background: linear-gradient(135deg, #10b981, #059669);
+}
+
+
+/* ============================= */
+/* SCORE BAR VISUAL MATCH */
+/* ============================= */
+
+.score-bar {
+ .score-bar {
+  width: 70px;          /* was 80 */
+  height: 8px;
+  border-radius: 999px;
+}
+/* slightly thicker like original */
+}
+
+.score-fill.warning {
+  background: var(--warning);
+}
+
+
+/* ============================= */
+/* QUESTIONNAIRE STYLES */
+/* ============================= */
+
+.questionnaire {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.875rem;
+  color: var(--warning);
+}
+
+.send-btn {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 0.45rem 0.9rem;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: var(--shadow-sm);
+}
+
+.send-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+
+
+/* ============================= */
+/* FINDINGS + TIER + PDF */
+/* ============================= */
+
+.findings {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  color: var(--danger);
+  font-weight: 600;
+}
+
+.tier-badge {
+  background: #fde7d8;
+  color: #f97316;
+  padding: 0.3rem 0.65rem;
+  border-radius: 8px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.pdf-btn {
+  border: 1px solid var(--border);
+  background: var(--bg-secondary);
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.pdf-btn:hover {
+  background: #eef2f7;
+}
+
+.pending-text {
+  color: var(--text-muted);
+}
+.refresh-btn {
+  border: 1px solid var(--border);
+  background: var(--bg-secondary);
+  padding: 6px 12px;
+  border-radius: 10px;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+
+  font-size: 0.8125rem;      /* ⭐ correct size = 13px */
+  font-weight: 500;
+  color: var(--text-secondary);
+
+  transition: all 0.2s ease;
+}
+
+.refresh-btn:hover {
+  background: #eef2f7;
+  color: var(--text-primary);
+}
+
+.tier-badge {
+  background: #fde9dd;   /* softer peach */
+  color: #ea580c;
 }
