@@ -28,14 +28,16 @@ function VendorTable() {
   ];
 
   return (
-    <div className="vendor-table-card">
-      <div className="table-header table-header-flex">
-        <h3>Your Vendors</h3>
+    <div className="table-card">
+      <div className="table-header">
+        <h3 className="table-title">Your Vendors</h3>
 
-        <button className="refresh-btn">
-          <RefreshCw size={16} />
-          Refresh
-        </button>
+        <div className="table-actions">
+          <button className="btn-refresh">
+            <RefreshCw size={16} />
+            Refresh
+          </button>
+        </div>
       </div>
 
       <table className="vendor-table">
