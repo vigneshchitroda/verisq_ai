@@ -1,6 +1,7 @@
-import Header from "../components/header/Header"
-import HeroSection from "../components/hero/HeroSection"
-import Footer from "../components/footer/Footer"
+import Header from "../components/landingPage/Header"
+import HeroSection from "../components/landingPage/HeroSection"
+import Footer from "../components/landingPage/Footer"
+import "../styles/landingPageStyle.css"
 
 function LandingPage() {
   return (

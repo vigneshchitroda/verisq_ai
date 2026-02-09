@@ -9,9 +9,9 @@ function HeroSection() {
   return (
     <>
       {/* MAIN HERO */}
-      <section className="hero">
+      <section className="landing-hero">
         {/* Left Content */}
-        <div className="hero-content">
+        <div className="landing-hero-content">
           <CampaignTag />
 
           <h1 className="hero-headline">

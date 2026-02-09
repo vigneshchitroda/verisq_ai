@@ -43,7 +43,7 @@ body {
 }
 
 /* Header */
-.header {
+.landing-header {
     position: fixed;
     top: 0;
     left: 0;
@@ -56,7 +56,7 @@ body {
     box-shadow: var(--shadow-sm);
 }
 
-.header-content {
+.landing-header-content {
     max-width: 1400px;
     margin: 0 auto;
     display: flex;
@@ -64,21 +64,21 @@ body {
     justify-content: space-between;
 }
 
-.logo {
+.landing-logo {
     display: flex;
     align-items: center;
     gap: 0.5rem;
     text-decoration: none;
 }
 
-.logo-text {
+.landing-logo-text {
     font-size: 1.5rem;
     font-weight: 700;
     color: var(--primary-dark);
     letter-spacing: 0.05em;
 }
 
-.logo-badge {
+.landing-logo-badge {
     background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
     color: white;
     font-size: 0.75rem;
@@ -87,7 +87,7 @@ body {
     border-radius: 4px;
 }
 
-.header-nav {
+.landing-header-nav {
     display: flex;
     align-items: center;
     gap: 2rem;
@@ -105,7 +105,7 @@ body {
     color: var(--primary);
 }
 
-.btn-header {
+.landing-btn-header {
     background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
     color: white;
     padding: 0.625rem 1.25rem;
@@ -117,13 +117,13 @@ body {
     box-shadow: 0 2px 8px rgba(59, 130, 246, 0.3);
 }
 
-.btn-header:hover {
+.landing-btn-header:hover {
     transform: translateY(-1px);
     box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
 }
 
 /* Hero Section */
-.hero {
+.landing-hero {
     min-height: 100vh;
     padding: 7rem 2rem 4rem;
     display: grid;
@@ -134,7 +134,7 @@ body {
     align-items: center;
 }
 
-.hero-content {
+.landing-hero-content {
     padding-right: 2rem;
     
 }
@@ -597,37 +597,37 @@ body {
 }
 
 /* Footer */
-.footer {
+.landing-footer {
     background: white;
     border-top: 1px solid var(--border);
     padding: 2rem;
     text-align: center;
 }
 
-.footer-content {
+.landing-footer-content {
     max-width: 1400px;
     margin: 0 auto;
 }
 
-.footer-links {
+.landing-footer-links {
     display: flex;
     justify-content: center;
     gap: 2rem;
     margin-bottom: 1rem;
 }
 
-.footer-link {
+.landing-footer-link {
     color: var(--text-secondary);
     text-decoration: none;
     font-size: 0.875rem;
     transition: color 0.2s;
 }
 
-.footer-link:hover {
+.landing-footer-link:hover {
     color: var(--primary);
 }
 
-.footer-copy {
+.landing-footer-copy {
     font-size: 0.8125rem;
     color: var(--text-muted);
 }

@@ -54,14 +54,14 @@ body {
 }
 
 /* Header */
-.header {
+.dashboard-header {
   background: linear-gradient(135deg, var(--primary-dark) 0%, var(--secondary) 100%);
   color: white;
   padding: 1.5rem 2rem;
   box-shadow: var(--shadow-lg);
 }
 
-.header-content {
+.dashboard-header-content {
   max-width: 1400px;
   margin: 0 auto;
   display: flex;
@@ -69,26 +69,26 @@ body {
   justify-content: space-between;
 }
 
-.header-left {
+.dashboard-header-left {
   display: flex;
   align-items: center;
   gap: 1.5rem;
 }
 
-.logo {
+.dashboard-logo {
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
 
-.logo-text {
+.dashboard-logo-text {
   font-size: 1.5rem;
   font-weight: 700;
   color: white;
   letter-spacing: 0.1em;
 }
 
-.logo-badge {
+.dashboard-logo-badge {
   background: var(--accent);
   color: var(--primary-dark);
   font-size: 0.75rem;
@@ -97,19 +97,19 @@ body {
   border-radius: 4px;
 }
 
-.header-divider {
+.dashboard-header-divider {
   width: 1px;
   height: 32px;
   background: rgba(255, 255, 255, 0.2);
 }
 
-.header-title {
+.dashboard-header-title {
   font-size: 1.125rem;
   font-weight: 500;
   opacity: 0.9;
 }
 
-.header-right {
+.dashboard-header-right {
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -161,7 +161,7 @@ body {
 }
 
 /* Main Content */
-.main {
+.dashboard-main {
   max-width: 1400px;
   margin: 0 auto;
   padding: 2rem;

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import DashboardHeader from "../components/dashboard/Header";
 import WelcomeBanner from "../components/dashboard/WelcomeBanner";
-import "../styles/dashboard.css";
+import "../styles/dashboardStyle.css"
 import KpiGrid from "../components/dashboard/KpiGrid";
 import Insights from "../components/dashboard/Insights";
 import VendorTable from "../components/dashboard/VendorTable";
@@ -22,7 +22,7 @@ function DashboardPage() {
     <>
       <DashboardHeader />
 
-      <main className="main">
+      <main className="dashboard-main">
         <WelcomeBanner
           usedVendors={usedVendors}
           maxVendors={maxVendors}
