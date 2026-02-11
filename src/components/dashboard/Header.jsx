@@ -2,23 +2,23 @@ import { Sparkles, ChevronDown } from "lucide-react";
 
 function DashboardHeader() {
   return (
-    <header className="header">
-      <div className="header-content">
+    <header className="dashboard-header">
+      <div className="dashboard-header-content">
 
         {/* LEFT */}
-        <div className="header-left">
-          <div className="logo">
-            <span className="logo-text">VERISQ</span>
-            <span className="logo-badge">AI</span>
+        <div className="dashboard-header-left">
+          <div className="dashboard-logo">
+            <span className="dashboard-logo-text">VERISQ</span>
+            <span className="dashboard-logo-badge">AI</span>
           </div>
 
-          <div className="header-divider"></div>
+          <div className="dashboard-header-divider"></div>
 
-          <span className="header-title">Trial Dashboard</span>
+          <span className="dashboard-header-title">Trial Dashboard</span>
         </div>
 
         {/* RIGHT */}
-        <div className="header-right">
+        <div className="dashboard-header-right">
           <div className="trial-badge">
             <Sparkles size={16} />
             <span>Free Trial</span>
