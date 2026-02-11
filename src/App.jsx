@@ -4,10 +4,11 @@ import viteLogo from '/vite.svg'
 import './styles/global.css'
 // import './App.css'
 import LandingPage from './pages/LandingPage'
+import DashboardPage from './pages/DashboardPage'
 
 function App() {
   return(
-    <LandingPage/>
+    <DashboardPage/>
   )
 }
 
